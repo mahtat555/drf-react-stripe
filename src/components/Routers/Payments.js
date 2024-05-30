@@ -5,7 +5,7 @@ import Payment from "../../screens/Payment"
 const Payments = (
   <>
     {/* Payment home page */}
-    <Route path={"/"} element={
+    <Route path={"payments/"} element={
       <Payment />
     } >
     </Route>

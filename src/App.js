@@ -1,5 +1,5 @@
 import Router from "./components/Router";
-
+import Home from "./screens/Home"
 
 function App() {
 

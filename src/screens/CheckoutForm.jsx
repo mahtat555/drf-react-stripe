@@ -3,6 +3,7 @@ import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 
 import { doPayment } from "../actions/payments"
 
+
 const options = {
   style: {
     base: {
@@ -33,7 +34,7 @@ const CheckoutForm = () => {
 
   return (
     <>
-      <div style={{ width: "50%", paddingTop: "40px", margin: "auto" }}>
+      <div style={{ width: "50%", paddingTop: "40px", paddingBottom: "40px", margin: "auto" }}>
         <CardElement options={options} className="card-element" />
       </div>
 

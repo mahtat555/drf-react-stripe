@@ -27,3 +27,50 @@ code {
   width: 100px;
   padding: 5px;
 }
+
+.payment-options-stripe,
+.payment-options-paypal {
+  padding-left: 48px;
+  display: inline;
+}
+
+.payment-options input[type="radio"] {
+  margin-right: 8px;
+  display: none;
+}
+
+
+.payment-options input[type="radio"]+label {
+  cursor: pointer;
+  padding-left: 24px;
+  position: relative;
+}
+
+.payment-options input[type="radio"]+label:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.payment-options input[type="radio"]:checked+label:before {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.login-with {
+  margin: auto;
+  width: 40%;
+}
+
+.microsoft,
+.google-plus {
+  margin-left: 24px;
+  margin-top: 48px;
+}
